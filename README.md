@@ -1,11 +1,5 @@
 # 7015
 
-
-### Dataset
-- VQA-RAD
-- https://huggingface.co/datasets/flaviagiammarino/vqa-rad/viewer/default/train?p=1&views%5B%5D=train
-
-  
 ## Medical Visual Question Answering on VQA-RAD
 
 This repository contains two Med-VQA implementations:
@@ -14,6 +8,9 @@ This repository contains two Med-VQA implementations:
 
 - BLIP-Based VLM: A modern Vision-Language Model adapted for discriminative fine-tuning, featuring a frozen vision encoder and a custom classification head for closed-set VQA tasks."
 
+## Dataset
+- VQA-RAD
+- https://huggingface.co/datasets/flaviagiammarino/vqa-rad/viewer/default/train?p=1&views%5B%5D=train
 
 ## 📊 Data Preparation
 To ensure a fair comparison between the CNN-LSTM baseline and the BLIP model, we implemented a strictly image-disjoint split strategy.
