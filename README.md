@@ -4,8 +4,9 @@
 
 This repository contains two Med-VQA implementations:
 
-1. CNN-LSTM baseline with frozen ResNet50
-2. BLIP-based Vision-Language Model with discriminative fine-tuning
+- CNN-LSTM Baseline: A classical approach utilizing a frozen ResNet50 for visual feature extraction combined with an LSTM for text processing.
+
+- BLIP-Based VLM: A modern Vision-Language Model adapted for discriminative fine-tuning, featuring a frozen vision encoder and a custom classification head for closed-set VQA tasks."
 
 ## 📊 Data Preparation
 To ensure a fair comparison between the CNN-LSTM baseline and the BLIP model, we implemented a strictly image-disjoint split strategy.
