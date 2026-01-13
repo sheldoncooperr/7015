@@ -29,19 +29,6 @@ To ensure a rigorously fair comparison between the CNN-LSTM baseline and the BLI
 * **Reproducibility:** A fixed random seed (`SEED=42`) is used across all scripts.
 * **Why:** This prevents data leakage (ensuring the same patient's image never appears in both training and testing sets) and guarantees both models are evaluated on the **exact same held-out test set**.
 
-## 🏆 Results
-
-Both models were evaluated on the held-out test set defined above.
-
-| Model | Overall Accuracy | Closed (Yes/No) | Open-Ended | F1 Score |
-| **CNN-LSTM** | **60.25%** | **66.14%** | **39.44%** | **0.593** |
-| BLIP (Frozen Vision) | 56.21% | 64.94% | 25.35% | 0.534 |
-
-### 💡 Key Findings
-* **The Accuracy Paradox:** The simpler CNN-LSTM baseline outperformed the pre-trained BLIP model, particularly on Open-Ended questions (39.44% vs 25.35%).
-* **Domain Gap:** Since the BLIP vision encoder was **frozen** and pre-trained on natural images (COCO), it struggled to extract meaningful features from grayscale medical scans.
-* **Qualitative Difference:** Although BLIP had lower accuracy, qualitative analysis showed it produced more linguistically coherent errors (e.g., predicting incorrect organ names) compared to the CNN's tendency to guess "Yes/No".
-
 ## 🛠️ Environment & Usage
 
 ### Requirements
@@ -56,6 +43,4 @@ Both models were evaluated on the held-out test set defined above.
 
 To reproduce the results, simply open the notebooks in Kaggle or Colab and run all cells. The dataset will be automatically downloaded via the HuggingFace API.
 
-## 👥 Authors
-* CR - Model Implementation & Analysis
-* LR - Experimental Design & Interpretation
+
